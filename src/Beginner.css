@@ -1,0 +1,118 @@
+:root {
+    --apple-blur: saturate(180%) blur(20px);
+    --aurora-1: #ff5e7d;
+    --aurora-2: #5e72eb;
+    --aurora-3: #4fd1c5;
+    --apple-light: rgba(255, 255, 255, 0.8);
+    --apple-dark: rgba(0, 0, 0, 0.6);
+}
+
+.beginner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+    background: linear-gradient(135deg, var(--aurora-1), var(--aurora-2), var(--aurora-3));
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.placard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: var(--apple-blur);
+    border-radius: 12px;
+    padding: 15px 20px;
+    width: 50%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    opacity: 0.8;
+}
+
+.placard:hover {
+    transform: scale(1.05);
+}
+
+.placard h2 {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.placard input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: var(--apple-blur);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.05);
+}
+
+.query-preview {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: var(--apple-blur);
+    padding: 15px;
+    border-radius: 12px;
+    width: 60%;
+    max-width: 500px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-table {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: var(--apple-blur);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.result-table table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+.result-table th,
+.result-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.result-table th {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+.result-table tr:last-child td {
+    border-bottom: none;
+}
